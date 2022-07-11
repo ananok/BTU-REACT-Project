@@ -1,0 +1,555 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger-nav {
+  color: white;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 70px;
+  color: rgb(9, 42, 133);
+  vertical-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 2%;
+  vertical-align: middle;
+}
+.img {
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.footer-info a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.footer-info p {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+}
+
+.footer-div {
+  padding: 10px 0;
+  width: 100%;
+  min-height: 70px;
+  background-color: rgb(228, 242, 248);
+  text-align: center;
+}
+.socials {
+  color: rgb(0, 0, 0);
+}
+
+.footer-colors {
+  color: rgb(0, 0, 0);
+  padding: 4px;
+}
+
+.banner {
+  background-image: url(https://media.istockphoto.com/photos/collection-of-wide-banner-of-business-concept-web-design-index-tag-picture-id966899696?k=20&m=966899696&s=170667a&w=0&h=_u7pVLXwYtv9_cz9jq0qtFm9y_pUN0R_2Jv1Tf29iZo=);
+  background-size: contain;
+  width: 100%;
+  height: 250px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(31, 30, 30, 0.3);
+  z-index: 1000;
+}
+.modalview {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  min-height: 200px;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255);
+  z-index: 1000;
+}
+
+.modal-div {
+  color: rgb(87, 79, 79);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.modal-div button {
+  top: 0;
+  position: absolute;
+  right: 0;
+  width: 30%;
+  background: none;
+  border: none;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(87, 79, 79);
+}
+
+.modal-div button:hover {
+  cursor: pointer;
+  color: rgb(172, 167, 167);
+}
+
+.modal-div h2 {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.modal-div2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: rgb(99, 88, 88);
+  margin: 10px 0;
+}
+
+.modal-div2 img {
+  width: 40%;
+  border: solid 2px rgb(91, 89, 89);
+}
+
+.modal-div2 p {
+  width: 50%;
+  font-size: 0.9rem;
+  height: 100%;
+  text-align: justify;
+}
+.post-main-div {
+  background-color: white;
+  color: rgb(99, 88, 88);
+  width: 1125px;
+  margin: 5px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.created-post-div {
+  width: 38%;
+  margin-bottom: 20px;
+  margin-top: 45px;
+  
+  min-height: 220px;
+  box-shadow: 1px 2px 5px 5px rgba(177, 176, 176, 0.25);
+}
+.post-img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+.post-title {
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+.post-description {
+  margin-top: 10px;
+  padding: 0 10px;
+  font-size: 0.8rem;
+}
+
+.post-view-butt {
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: rgb(99, 88, 88);
+  padding-top: 5px;
+  float: right;
+  font-size: 0.8rem;
+}
+
+.post-view-butt:hover {
+  cursor: pointer;
+  color: rgb(50, 50, 63);
+}
+
+.addService {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  width: 300px;
+  padding: 15px 20px;
+  background-color: rgb(9, 42, 133);
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 4px;
+}
+
+.create-service {
+  width: 80%;
+  padding: 20px;
+}
+.created-post {
+  margin-top: 15px;
+  width: 40%;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px 3px rgba(228, 228, 228, 0.25);
+  font-size: 0.9rem;
+}
+
+.post-description2 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  word-break: break-all;
+  margin-left: 15px;
+  text-align: justify;
+}
+.title {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.image {
+  width: 240px;
+  object-fit: cover;
+  padding-top: 10px;
+}
+
+input,
+label {
+  display: block;
+}
+
+.input-title {
+  width: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000000;
+  padding: 5px;
+  height: 25px;
+}
+
+.textarea {
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  width: 100%;
+}
+
+.bottom-close {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border: none;
+  padding: 11px 20px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.bottom-save {
+  margin-top: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: rgb(9, 42, 133);
+  color: white;
+  text-align: center;
+  border: none;
+  margin-left: 17px;
+  padding: 11px 20px;
+  width: 50%;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.titleDes {
+  width: 45%;
+  font-size: 0.9rem;
+  word-break: break-all;
+  text-align: center;
+}
+
+.head {
+  word-break: break-all;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.top-div {
+  margin-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-head {
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .post-main-div {
+    width: 100%;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .created-post-div {
+    width: 80%;
+    font-size: 0.5rem;
+    height: auto;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .footer-info a {
+    font-size: 1.3rem;
+  }
+
+  .footer-info p {
+    font-size: 1.3rem;
+  }
+  svg {
+    width: 30px;
+  }
+  .banner {
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+  }
+  .addService {
+    width: 100%;
+    font-size: 1rem;
+    padding: 15px 40px;
+  }
+  .nav-link {
+    display: none;
+  }
+  .titleDes {
+    display: block;
+    word-break: break-all;
+    width: 100%;
+  }
+
+  .titleDes h2 {
+    font-size: 1.2rem;
+  }
+
+  .head {
+    margin: 9px;
+    text-align: left;
+  }
+  .titleDes p {
+    font-size: 1rem;
+    margin: 9px 9px;
+  }
+
+  .textarea {
+    width: 100%;
+    height: 40px;
+  }
+  .modalview {
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    min-height: 200px;
+  }
+  .service-head {
+    font-size: 0.9rem;
+  }
+  .bottom-close {
+    padding: 5px 5px;
+    width: 30%;
+    font-size: 0.8rem;
+  }
+
+  .bottom-save {
+    margin-left: 10px;
+    padding: 5px 5px;
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  .created-post {
+    flex-direction: column;
+    width: 80%;
+  }
+  .image {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+  .service-head {
+    font-size: 1rem;
+  }
+  .post-main-div {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .created-post-div {
+    width: 40%;
+    font-size: 0.5rem;
+    height: auto;
+    flex-direction: row;
+    margin-left:0;
+    
+  }
+
+  svg {
+    width: 30px;
+  }
+  .footer-info a {
+    font-size: 1.3rem;
+  }
+
+  .footer-info p {
+    font-size: 1.3rem;
+  }
+  .addService {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 15px 40px;
+  }
+
+  .nav-link {
+    display: none;
+  }
+  .titleDes {
+    display: block;
+    word-break: break-all;
+    width: 100%;
+  }
+  .titleDes h2 {
+    font-size: 1.3rem;
+  }
+
+  .titleDes p {
+    font-size: 1rem;
+    margin: 9px 9px;
+  }
+  .textarea {
+    width: 100%;
+    height: 50px;
+  }
+  .modalview {
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    min-height: 200px;
+  }
+
+  .bottom-close {
+    padding: 5px 5px;
+    width: 30%;
+    font-size: 0.8rem;
+  }
+
+  .bottom-save {
+    margin-left: 10px;
+    padding: 5px 0;
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  .created-post {
+    flex-direction: column;
+    width: 60%;
+  }
+  .image {
+    width: 100%;
+  }
+  .head {
+    text-align: left;
+  }
+  nav {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1007px) and (max-width: 1130px) {
+  .post-main-div {
+    width: 100%;
+  }
+  .textarea {
+    width: 100%;
+    height: 40px;
+  }
+  .modalview {
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    min-height: 200px;
+  }
+
+  .bottom-close {
+    padding: 5px 5px;
+    width: 30%;
+    font-size: 0.8rem;
+  }
+
+  .bottom-save {
+    margin-left: 10px;
+    padding: 5px 0;
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  .created-post {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .titleDes {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .titleDes h2 {
+    font-size: 1.3rem;
+  }
+
+  .titleDes p {
+    font-size: 1.1rem;
+    margin: 9px 9px;
+  }
+  .image {
+    width: 100%;
+  }
+
+  .head {
+    text-align: left;
+  }
+}
